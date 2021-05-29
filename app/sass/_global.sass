@@ -1,0 +1,84 @@
+html
+  box-sizing: border-box
+*, *::before, *::after
+  box-sizing: border-box
+body
+  font-family: 'Fira Sans', sans-serif
+  font-weight: 400
+  font-size: 16px
+  background-color: #171919
+  color: #fff
+  text-transform: uppercase
+a
+  display: inline-block
+  text-decoration: none 
+  color: #fff
+
+.suptitle-left
+  font-size: 22px
+  line-height: 32px
+  letter-spacing: 7.33333px
+  opacity: 0.5
+  padding-left: 103px
+  position: relative
+  display: inline-block
+  &::before
+    content: ''
+    position: absolute
+    width: 80px
+    height: 1px
+    background-color: #fff
+    top: 50%
+    left: 0
+
+.suptitle-right
+  font-size: 22px
+  line-height: 32px
+  letter-spacing: 7.33333px
+  opacity: 0.5
+  padding-right: 103px
+  position: relative
+  display: inline-block
+  &::after
+    content: ''
+    position: absolute
+    width: 80px
+    height: 1px
+    background-color: #fff
+    top: 50%
+    right: 0
+
+ul, li
+  list-style: none
+
+.container
+  max-width: 1920px
+  margin: 0 auto
+
+.title
+  position: relative
+  span
+    padding-left: 245px
+    font-weight: 800
+    font-size: 80px
+    line-height: 90px
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 80px
+      height: 1px
+      background-color: $green
+      top: 0
+      right: 0
+  h3
+    position: absolute
+    margin: 0
+    top: 75px
+    left: -49px
+    font-weight: 800
+    font-size: 200px
+    line-height: 56px
+    opacity: 0.02
+
+

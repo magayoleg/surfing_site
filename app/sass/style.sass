@@ -1,0 +1,197 @@
+@import "vars"
+@import "libs"
+@import "fonts"
+@import "global"
+
+
+
+.header
+  position: relative
+  height: 100vh
+  &__slider
+    &-item
+      height: 100vh
+      position: relative
+  .slider
+    &-item1
+      background: url('../img/header-bg1.jpg') center/cover 
+      no-repeat
+    &-item2
+      background: url('../img/header-bg2.jpg') center/cover no-repeat
+    &-item3
+      background: url('../img/header-bg3.jpg') center/cover no-repeat
+    &-item4
+      background: url('../img/header-bg4.jpg') center/cover no-repeat
+
+
+.header__slider>.slick-list
+  height: 100vh
+
+.slider-item__info
+  position: absolute
+  right: 80px
+  bottom: 116px
+  text-align: right
+  &-title
+    font-weight: 800
+    font-size: 80px
+    line-height: 86px
+    margin-bottom: 48px
+  &-text
+    font-weight: 800
+    font-size: 40px
+    line-height: 50px
+    margin-bottom: 20px
+    span
+      font-weight: 100
+  &-suptitle
+    margin-bottom: 5px
+  &-shop
+    max-width: 480px
+    right: auto
+    bottom: auto
+    left: 133px
+    text-align: left
+
+.slider-arrows
+  position: absolute
+  z-index: 1
+  top: 40px
+  right: 80px
+  cursor: pointer
+  &__left
+    right: 145px
+
+.slider-dots
+  position: absolute
+  right: 90px
+  bottom: 40px
+  max-width: 960px
+  width: 100%
+  .slick-list
+    width: 960px
+  .slick-track
+    display: flex
+    justify-content: space-between
+.slick-current
+  .dots-box
+    border-color: $green
+.dots-box
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 200px
+  border-top: 4px solid #fff
+  padding-top: 6px
+  &__number
+    font-weight: 800
+    font-size: 24px
+    line-height: 34px
+  &__name
+    font-weight: 300
+    line-height: 19px
+    text-transform: none
+
+.header__title
+  position: absolute
+  left: -0.97%
+  right: 68.54%
+  top: -0.53%
+  z-index: 1
+  font-weight: 800
+  font-size: 200px
+  line-height: 156px
+  opacity: 0.07
+  max-width: 467px
+
+.header__aside
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 2
+
+.menu__list
+  padding: 0
+  margin-top: 118px
+  height: 353px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  a, img, span
+    margin: 0 auto
+    display: block
+    text-align: center
+    font-weight: 500
+    font-size: 12px
+    line-height: 24px
+    letter-spacing: 3px
+    text-transform: none
+
+.header__vertical-line
+  height: 100vh
+  width: 1px
+  position: absolute
+  background-color: #fff
+  opacity: 0.25
+  left: 168px
+  z-index: 1
+  
+.header__search
+  margin-top: 38px
+  text-align: center
+
+.header__date
+  margin-top: 25px
+  font-weight: 800
+  font-size: 72px
+  line-height: 64px
+  text-align: center
+  span
+    display: block
+    margin-top: 10px
+    font-weight: 300
+    font-size: 16px
+    line-height: 16px
+    text-align: center
+    letter-spacing: 1.4px
+
+.header__location
+  margin-top: 30px
+  font-weight: 300
+  font-size: 12px
+  line-height: 14px
+  text-align: center
+  letter-spacing: 1.05px
+  padding-left: 20px
+  position: relative
+  text-transform: none
+  &::before
+    content: ''
+    position: absolute
+    width: 11px
+    height: 13px
+    left: 45px
+    background: url('../img/marker.svg')
+
+.header__arrows
+  position: absolute
+  bottom: 42px
+  left: 209px
+
+.surf
+  padding: 157px 0 210px 0
+  position: relative
+
+.travel
+  padding: 157px 0 210px 0
+  position: relative
+
+.sleep
+  padding: 157px 0 210px 0
+  position: relative
+
+.shop
+  padding: 157px 0 210px 0
+  position: relative
+  
+@import "media"
