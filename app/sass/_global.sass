@@ -81,4 +81,35 @@ ul, li
     line-height: 56px
     opacity: 0.02
 
+.btn
+  font-weight: 800
+  font-size: 40px
+  line-height: 36px
+  text-transform: uppercase
+  span
+    display: inline-block
+    padding: 17px 57px 20px 17px
+    background-color: $green
+    margin-left: 19px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      background-color: #fff
+      height: 1px
+      width: 20px
+      top: 45%
+      left: 0
+      transform: translateX(-50%)
+    &::after
+      content: ''
+      position: absolute
+      width: 25px
+      height: 21px
+      background-image: url('../img/arrows-right.svg')
+      top: 50%
+      transform: translateY(-50%)
+      right: 17px
+
+
 
