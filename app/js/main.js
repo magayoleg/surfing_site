@@ -23,24 +23,20 @@ $(function () {
     infinite: true,
     prevArrow: '<img class="slider-arrows slider-arrows__left animate__animated animate__fadeInRight animate__repeat-3 animate__slow" src="img/arrows-left.svg" alt="arrows-left.svg"></img>',
     nextArrow: '<img class="slider-arrows slider-arrows__right animate__animated animate__fadeInLeft animate__repeat-3 animate__slow" src="img/arrows-right.svg" alt="arrows-right.svg"></img>',
+    asNavFor: '.airlieBeach-popUp'
   })
 
   $('.surf__popup svg').map((index, elem) => {
-    console.log(arguments)
     ++index;
-    $(`.${elem.className.animVal}`).mouseover(function () {
-      $(`.${'surf__popup-container'+index}, .${'slider-item__info-text'+index}`).css({
-        'opacity' : '1'
-      })
-    })
-    $(`.${elem.className.animVal}`).mouseout(function() {
-      $(`.${'surf__popup-container'+index}, .${'slider-item__info-text'+index}`).css({
+    $(`.${'surf__popup-drop' + index}`).click(function (elem) {
+      $('.surf__popup-container-all, .slider-item__popup-text').css({
         'opacity' : '0'
       })
+      if ($(`.${'surf__popup-container' + index}`).css('opacity') === '0') {
+        $(`.${'surf__popup-container'+index}, .${'slider-item__info-text'+index}`).css({
+          'opacity' : '1'
+        })
+      }
     })
   })
-
-
-
-
 });

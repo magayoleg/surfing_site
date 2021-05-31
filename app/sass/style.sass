@@ -14,14 +14,13 @@
       position: relative
   .slider
     &-item1
-      background: url('../img/header-bg1.jpg') center/cover 
-      no-repeat
+      background: url('../img/header-bg1.jpg') center/cover	no-repeat	
     &-item2
       background: url('../img/header-bg2.jpg') center/cover no-repeat
     &-item3
       background: url('../img/header-bg3.jpg') center/cover no-repeat
     &-item4
-      background: url('../img/header-bg4.jpg') center/cover no-repeat
+      background: url('../img/header-bg4.jpg') center/cover	no-repeat
 
 
 .header__slider>.slick-list
@@ -59,7 +58,7 @@
   &-surf>.slider-item__info
     &-text1, &-text2, &-text3, &-text4, &-text5
       opacity: 0
-      transition: all 1s
+      transition: all 0.8s
       position: absolute
       right: 1%
       font-weight: 800
@@ -122,13 +121,14 @@
 
 .header__aside
   position: absolute
+  height: 100%
   left: 0
   top: 0
   z-index: 2
 
 .menu__list
   padding: 0
-  margin-top: 118px
+  margin-top: 30%
   height: 353px
   display: flex
   flex-direction: column
@@ -157,7 +157,10 @@
   text-align: center
 
 .header__date
-  margin-top: 25px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 70px
   font-weight: 800
   font-size: 72px
   line-height: 64px
@@ -171,23 +174,28 @@
     text-align: center
     letter-spacing: 1.4px
 
-.header__location
-  margin-top: 30px
-  font-weight: 300
-  font-size: 12px
-  line-height: 14px
-  text-align: center
-  letter-spacing: 1.05px
-  padding-left: 20px
-  position: relative
-  text-transform: none
-  &::before
-    content: ''
+.header
+  &__box-location
     position: absolute
-    width: 11px
-    height: 13px
-    left: 45px
-    background: url('../img/marker.svg')
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 40px
+  &__location
+    font-weight: 300
+    font-size: 12px
+    line-height: 14px
+    text-align: center
+    letter-spacing: 1.05px
+    padding-left: 20px
+    position: relative
+    text-transform: none
+    &::before
+      content: ''
+      position: absolute
+      width: 11px
+      height: 13px
+      left: 0
+      background: url('../img/marker.svg')
 
 .header__arrows
   position: absolute
@@ -343,8 +351,9 @@
       min-height: 750px
       padding: 75px 0 0 40px
       position: relative
+      transition: all 0.5s
       &:hover
-        background-color: rgba(#1c2121, 0)
+        background-color: rgba(#1c2121, 0.2)
         .surf-box__inner-btn
           display: block
       &-btn

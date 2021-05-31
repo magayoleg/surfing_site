@@ -53,8 +53,10 @@
           20
           <span>06 | 2022</span>
         </div>
-        <div class="header__location">
-          California
+        <div class="header__box-location">
+          <div class="header__location">
+            California
+          </div>
         </div>
       </div>
       <div class="header__slider">
@@ -148,11 +150,11 @@
         </div>
         <div class="slider-item__info slider-item__info-surf">
           <div class="slider-item__info-suptext suptitle-left">Current location</div>
-          <div class="slider-item__info-text1">California <span>|</span> USA</div>
-          <div class="slider-item__info-text2">Queensland <span>|</span>  Australia</div>
-          <div class="slider-item__info-text3">Siargao <span>|</span>  Philippines</div>
-          <div class="slider-item__info-text4">Hossegor <span>|</span>  France</div>
-          <div class="slider-item__info-text5">Durban Beach <span>|</span>  South Africa</div>
+          <div class="slider-item__info-text1 slider-item__popup-text">California <span>|</span> USA</div>
+          <div class="slider-item__info-text2 slider-item__popup-text">Queensland <span>|</span>  Australia</div>
+          <div class="slider-item__info-text3 slider-item__popup-text">Siargao <span>|</span>  Philippines</div>
+          <div class="slider-item__info-text4 slider-item__popup-text">Hossegor <span>|</span>  France</div>
+          <div class="slider-item__info-text5 slider-item__popup-text">Durban Beach <span>|</span>  South Africa</div>
         </div>
         <div class="surf__bg-image">
           <img src="./img/marker-big.svg" alt="marker-big.svg">
@@ -2884,12 +2886,14 @@
             </svg>
           </div>
           <div class="surf__popup airlieBeach-popUp">
-            <div class="surf__popup-container1">
+            <div class="surf__popup-container1 surf__popup-container-all">
               <div class="surf__popup-box">
                 <div class="surf__popup-info">
                   <div class="surf__popup-title">
                     Malibu Beach
-                    <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    <a href="#surfSliderId">
+                      <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    </a>
                   </div>
                   <div class="surf__popup-suptitle">USA</div>
                 </div>
@@ -2911,16 +2915,18 @@
                   </div>
                 </div>
                 <svg class="surf__popup-drop1" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
+                  <path class="svg__popup-drop1" fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
                 </svg>
               </div>
             </div>
-            <div class="surf__popup-container2">
+            <div class="surf__popup-container2 surf__popup-container-all">
               <div class="surf__popup-box">
                 <div class="surf__popup-info">
                   <div class="surf__popup-title">
                     Airlie Beach
-                    <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    <a href="#surfSliderId">
+                      <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    </a>
                   </div>
                   <div class="surf__popup-suptitle">Australia</div>
                 </div>
@@ -2942,16 +2948,18 @@
                   </div>
                 </div>
                 <svg class="surf__popup-drop2" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
+                  <path class="svg__popup-drop2" fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
                 </svg>
               </div>
             </div>
-            <div class="surf__popup-container3">
+            <div class="surf__popup-container3 surf__popup-container-all">
               <div class="surf__popup-box">
                 <div class="surf__popup-info">
                   <div class="surf__popup-title">
                     Cloud Nine
-                    <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    <a href="#surfSliderId">
+                      <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    </a>
                   </div>
                   <div class="surf__popup-suptitle">Philippines</div>
                 </div>
@@ -2973,16 +2981,18 @@
                   </div>
                 </div>
                 <svg class="surf__popup-drop3" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
+                  <path class="svg__popup-drop3" fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
                 </svg>
               </div>
             </div>
-            <div class="surf__popup-container4">
+            <div class="surf__popup-container4 surf__popup-container-all">
               <div class="surf__popup-box">
                 <div class="surf__popup-info">
                   <div class="surf__popup-title">
                     Vieux Boucau
-                    <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    <a href="#surfSliderId">
+                      <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    </a>
                   </div>
                   <div class="surf__popup-suptitle">France</div>
                 </div>
@@ -3004,16 +3014,18 @@
                   </div>
                 </div>
                 <svg class="surf__popup-drop4" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
+                  <path class="svg__popup-drop4" fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
                 </svg>
               </div>
             </div>
-            <div class="surf__popup-container5">
+            <div class="surf__popup-container5 surf__popup-container-all">
               <div class="surf__popup-box">
                 <div class="surf__popup-info">
                   <div class="surf__popup-title">
                     Durban North
-                    <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    <a href="#surfSliderId">
+                      <img src="./img/arrows-right-small.svg" alt="arrows-right-small.svg">
+                    </a>
                   </div>
                   <div class="surf__popup-suptitle">South Africa</div>
                 </div>
@@ -3035,7 +3047,7 @@
                   </div>
                 </div>
                 <svg class="surf__popup-drop5" width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
+                  <path class="svg__popup-drop5" fill-rule="evenodd" clip-rule="evenodd" d="M0.5 21.5C0.5 28.1274 5.87258 33.5 12.5 33.5C19.1274 33.5 24.5 28.1274 24.5 21.5C24.5 14.8726 12.5 0.5 12.5 0.5C12.5 0.5 0.5 14.8726 0.5 21.5Z" fill="#4AF6CD"/>
                 </svg>
               </div>
             </div>
@@ -3044,8 +3056,8 @@
             34.0501&#176;N -118.2446&#176;W
           </div>        
         </div>
-        <div class="surf-slider">
-          <div class="surf-box" style="background: url('./img/slide-1.jpg')">
+        <div class="surf-slider" id="surfSliderId">
+          <div class="surf-box" style="background: url('./img/slide-1.jpg') center/cover no-repeat">
             <div class="surf-box__inner">
               <div class="surf-box__title">Malibu Beach</div>
               <div class="surf-box__location">California <span>|</span> USA</div>
@@ -3056,7 +3068,7 @@
               </div>
             </div>
           </div>
-          <div class="surf-box" style="background: url('./img/slide-2.jpg')">
+          <div class="surf-box" style="background: url('./img/slide-2.jpg') center/cover no-repeat">
             <div class="surf-box__inner">
               <div class="surf-box__title">Airlie Beach</div>
               <div class="surf-box__location">Queensland <span>|</span> Australia</div>
@@ -3067,7 +3079,7 @@
               </div>
             </div>
           </div>
-          <div class="surf-box" style="background: url('./img/slide-3.jpg')">
+          <div class="surf-box" style="background: url('./img/slide-3.jpg') center/cover no-repeat">
             <div class="surf-box__inner">
               <div class="surf-box__title">Cloud Nine</div>
               <div class="surf-box__location">Siargao <span>|</span> Philippines</div>
@@ -3078,7 +3090,7 @@
               </div>
             </div>
           </div>
-          <div class="surf-box" style="background: url('./img/slide-4.jpg')">
+          <div class="surf-box" style="background: url('./img/slide-4.jpg') center/cover no-repeat">
             <div class="surf-box__inner">
               <div class="surf-box__title">Vieux Boucau</div>
               <div class="surf-box__location">Hossegor <span>|</span> France</div>
