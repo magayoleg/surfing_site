@@ -47,14 +47,17 @@
       font-weight: 100
   &-suptitle
     margin-bottom: 5px
-  &-surf, &-travel, &-sleep, &-shop
+  &-surf, &-sleep, &-shop
     top: 311px
   &-shop
     max-width: 480px
-    right: auto
-    bottom: auto
     left: 133px
     text-align: left
+  &-right
+    max-width: 350px
+    left: 133px
+    text-align: left
+    top: 40%
   &-surf>.slider-item__info
     &-text1, &-text2, &-text3, &-text4, &-text5
       opacity: 0
@@ -388,10 +391,76 @@
 .travel
   padding: 157px 0 210px 0
   position: relative
+  min-height: 1650px
+  height: 100%
+  &__slider
+    margin-top: 40px
+    .slick-list
+      height: 1100px
+  &-slider__head
+    position: relative  
+    min-height: 780px
+.slider-item__info-travel
+  top: 12%
+  &-right
+    max-width: 350px
+    left: 133px
+    top: 85%
+    text-align: left 
+.footer__slider-info-travel
+  top: 850px
+.travel__img  
+  img
+    position: absolute
+    display: block
+    right: 0
+  &-airplane
+    width: 40%
+    top: 50%
+  &-coctail
+    top: 72%
+.travel__inner-btn
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  top: 83%
 
 .sleep
-  padding: 157px 0 210px 0
+  padding: 160px 0 210px 0
   position: relative
+  min-height: 1650px
+  height: 100%
+  &__slider
+    margin-top: 40px
+    .slick-list
+      height: 1100px
+  &-slider__head
+    position: relative  
+    min-height: 780px
+.slider-item__info-sleep
+  top: 12%
+  &-right
+    max-width: 350px
+    left: 133px
+    top: 85%
+    text-align: left 
+.footer__slider-info-sleep
+  top: 850px
+.sleep__img  
+  img
+    position: absolute
+    display: block
+    right: 0
+  &-hammock
+    width: 35%
+    top: 45%
+  &-flowers
+    top: 54%
+.sleep__inner-btn
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  top: 83%
 
 .shop
   padding: 157px 0 210px 0
