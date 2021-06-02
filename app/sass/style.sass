@@ -31,7 +31,6 @@
   right: 80px
   bottom: 116px
   text-align: right
-  max-width: 600px
   width: 100%
   &-title
     font-weight: 800
@@ -39,6 +38,8 @@
     line-height: 86px
     margin-bottom: 48px
   &-text
+    display: inline-block
+    width: 100%
     font-weight: 800
     font-size: 40px
     line-height: 50px
@@ -207,7 +208,7 @@
 
 .surf
   padding: 157px 0 210px 0
-  position: relative
+  position: slider-item
   height: 1950px
   .vertical-lines 
     div
@@ -437,10 +438,13 @@
   &-slider__head
     position: relative  
     min-height: 780px
+  .sleep-slider-item__info-text
+    display: inline
 .slider-item__info-sleep
   top: 12%
   &-right
-    max-width: 350px
+    width: 900px
+    height: 5px
     left: 133px
     top: 85%
     text-align: left 
@@ -461,6 +465,21 @@
   left: 50%
   transform: translateX(-50%)
   top: 83%
+.slider-item__info-stars
+  display: inline-block
+  font-size: 25px
+  line-height: 50px
+  vertical-align: top
+  margin-left: 20px
+  color: $green
+  text-shadow: 0 0 10px $green
+.sleep__slider-plusminus
+  font-size: 40px
+  color: $green
+  text-shadow: 0 0 10px $green
+  padding-left: 200px
+
+
 
 .shop
   padding: 157px 0 210px 0
