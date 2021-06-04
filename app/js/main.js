@@ -1,5 +1,42 @@
 $(function () {
-  
+  if (window.matchMedia('(max-width: 576px)').matches) {
+    $('.surf-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      prevArrow: '<img class="slider-arrows slider-arrows__left animate__animated animate__fadeInRight animate__repeat-3 animate__slow" src="img/arrows-left.svg" alt="arrows-left.svg"></img>',
+      nextArrow: '<img class="slider-arrows slider-arrows__right animate__animated animate__fadeInLeft animate__repeat-3 animate__slow" src="img/arrows-right.svg" alt="arrows-right.svg"></img>',
+    })
+  }
+    else if (window.matchMedia('(max-width: 768px)').matches) {
+    $('.surf-slider').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      prevArrow: '<img class="slider-arrows slider-arrows__left animate__animated animate__fadeInRight animate__repeat-3 animate__slow" src="img/arrows-left.svg" alt="arrows-left.svg"></img>',
+      nextArrow: '<img class="slider-arrows slider-arrows__right animate__animated animate__fadeInLeft animate__repeat-3 animate__slow" src="img/arrows-right.svg" alt="arrows-right.svg"></img>',
+    })
+  } else if (window.matchMedia('(max-width: 992px)').matches) {
+    $('.surf-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      prevArrow: '<img class="slider-arrows slider-arrows__left animate__animated animate__fadeInRight animate__repeat-3 animate__slow" src="img/arrows-left.svg" alt="arrows-left.svg"></img>',
+      nextArrow: '<img class="slider-arrows slider-arrows__right animate__animated animate__fadeInLeft animate__repeat-3 animate__slow" src="img/arrows-right.svg" alt="arrows-right.svg"></img>',
+    })
+  } else {
+    $('.surf-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      prevArrow: '<img class="slider-arrows slider-arrows__left animate__animated animate__fadeInRight animate__repeat-3 animate__slow" src="img/arrows-left.svg" alt="arrows-left.svg"></img>',
+      nextArrow: '<img class="slider-arrows slider-arrows__right animate__animated animate__fadeInLeft animate__repeat-3 animate__slow" src="img/arrows-right.svg" alt="arrows-right.svg"></img>',
+    })
+  }
+})
+
+
+$(function () { 
   $('.header__slider').slick({
     infinite: true,
     fade: true,
@@ -31,14 +68,6 @@ $(function () {
     })
   })
 
-  $('.surf-slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    infinite: true,
-    prevArrow: '<img class="slider-arrows slider-arrows__left animate__animated animate__fadeInRight animate__repeat-3 animate__slow" src="img/arrows-left.svg" alt="arrows-left.svg"></img>',
-    nextArrow: '<img class="slider-arrows slider-arrows__right animate__animated animate__fadeInLeft animate__repeat-3 animate__slow" src="img/arrows-right.svg" alt="arrows-right.svg"></img>',
-  })
-
   $('.travel__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -55,35 +84,6 @@ $(function () {
     nextArrow: '<img class="slider-arrows slider-arrows__right animate__animated animate__fadeInLeft animate__repeat-3 animate__slow" src="img/arrows-right.svg" alt="arrows-right.svg"></img>',
   })
 
-  
-
-  // function repeatFunc(adressClass) {
-  //   const quantity = ($(adressClass).length - 1) / 2;
-    
-  //   function sleepNigthGuest(idText, idSymbolMinus, idSymbolPlus) {
-  //     for (let i = 1; i <= quantity; i++) {
-  //       $('.sleep__slider-plusminus').click((elem) => {
-  //         let sleepSelector = `#${idText}-${i} span`;
-  //         $(sleepSelector).html((index, oldHtml) => (
-  //           (elem.target.id === `${idSymbolMinus}-${i}` && oldHtml > 1) ? --oldHtml :
-  //           (elem.target.id === `${idSymbolPlus}-${i}`) ? ++oldHtml : oldHtml
-  //         ))
-  //         totalPerNightText(`totalPerNight-${i}`, `sleepNights-${i}`, `sleepGuests-${i}`)
-  //       })
-  //     }
-  //   }
-
-  //   function totalPerNightText(totalPerNight, sumNight, sumGuest, priceOneNight = 100) {
-  //     let total = $(`#${sumNight} span`).text() * $(`#${sumGuest} span`).text() * priceOneNight;
-  //     console.log(total)
-  //     // $(`#${totalPerNight}`).html(`$${total} USD`)
-  //   }
-      
-  //   sleepNigthGuest('sleepNights', 'minusNight', 'plusNight')
-  //   sleepNigthGuest('sleepGuests', 'minusGuest', 'plusGuest')
-  // }
-
-  
   function repeatFunc(adressClass) {
     const quantity = ($(adressClass).length - 1) / 2;
     
@@ -113,12 +113,8 @@ $(function () {
         $(`#totalPerNight-${a}`).text(`$${total} USD`)
       }
     }
-      
-    
   }
   repeatFunc('.sleep__slider .slick-slide')
 
-  
-
-
 });
+

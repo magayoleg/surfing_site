@@ -87,9 +87,8 @@
   bottom: 40px
   max-width: 960px
   width: 100%
-  .slick-list
-    width: 960px
   .slick-track
+    width: 960px
     display: flex
     justify-content: space-between
 .slick-current
@@ -208,27 +207,14 @@
 
 .surf
   padding: 157px 0 210px 0
-  position: slider-item
+  position: relative
   height: 1950px
-  .vertical-lines 
-    div
-      background-color: #fff
-      background-repeat: repeat-x
-      opacity: 0.07
-      width: 1px
-      height: 100%
-      position: absolute
-      top: 0
-      &:nth-child(1)
-        left: 168px
-      &:nth-child(2)
-        left: 593px
-      &:nth-child(3)
-        left: 1018px
   &__coordinates
     position: absolute
-    right: -10%
-    top: 470px
+    right: 4%
+    width: 0
+    top: 700px
+    white-space: nowrap
     font-weight: normal
     font-size: 18px
     line-height: 22px
@@ -249,46 +235,52 @@
     height: 760px
   &-map
     position: absolute
+    width: 1200px
     top: 120px
     left: 50%
     transform: translateX(-50%)
 
 .surf__popup
+  position: absolute
+  width: 100%
+  top: 120px
+  left: 50%
+  transform: translateX(-50%)
   &-container1, &-container2, &-container3, &-container4, &-container5
     opacity: 0
     transition: all 1s
   &-container1
     position: absolute
-    top: 178px
+    top: 94px
     left: 50%
-    transform: translateX(-209.2%)
+    transform: translateX(-249%)
   &-container2
     position: absolute
-    top: 390px
+    top: 290px
     left: 50%
-    transform: translateX(127.5%)
+    transform: translateX(172%)
   &-container3
     position: absolute
-    top: 249px
+    top: 160px
     left: 50%
-    transform: translateX(85.2%)
+    transform: translateX(119%)
   &-container4
     position: absolute
-    top: 100px
+    top: 22px
     left: 50%
-    transform: translateX(-70%)
+    transform: translateX(-75%)
   &-container5
     position: absolute
-    top: 442px
+    top: 340px
     left: 50%
-    transform: translateX(-32.1%)
+    transform: translateX(-28%)
   &-box
     position: relative
-    width: 283px
-    height: 216px
+    width: 210px
+    height: 180px
     background-color: rgba(#0F1010, .7)
     border-radius: 6px
-    padding: 30px
+    padding: 15px
   &-title
     font-weight: 800
     font-size: 18px
@@ -314,7 +306,7 @@
   &-weather
     display: flex
     justify-content: space-between
-    margin-top: 25px
+    margin-top: 15px
     &-all
       max-width: 50px
       font-weight: 800
@@ -399,6 +391,9 @@
     .slick-list
       height: 1100px
   &-slider__head
+    background-size: 75% 
+    background-position: left
+    background-repeat: no-repeat
     position: relative  
     min-height: 780px
 .slider-item__info-travel
@@ -410,14 +405,13 @@
     text-align: left 
 .footer__slider-info-travel
   top: 850px
-.travel__img  
+.travel__img 
   img
     position: absolute
     display: block
     right: 0
   &-airplane
-    width: 40%
-    top: 50%
+    top: 750px
   &-coctail
     top: 72%
 .travel__inner-btn
@@ -427,15 +421,18 @@
   top: 83%
 
 .sleep
-  padding: 160px 0 210px 0
+  padding: 160px 0 50px 0
   position: relative
-  min-height: 1650px
+  min-height: 1500px
   height: 100%
   &__slider
     margin-top: 40px
     .slick-list
       height: 1100px
   &-slider__head
+    background-size: 75% 
+    background-position: left
+    background-repeat: no-repeat
     position: relative  
     min-height: 780px
   .sleep-slider-item__info-text
@@ -458,13 +455,15 @@
   &-hammock
     width: 35%
     top: 45%
+    z-index: -1
   &-flowers
-    top: 54%
+    top: 52%
+    z-index: -1
 .sleep__inner-btn
   position: absolute
   left: 50%
   transform: translateX(-50%)
-  top: 83%
+  bottom: 5%
 .slider-item__info-stars
   display: inline-block
   font-size: 25px

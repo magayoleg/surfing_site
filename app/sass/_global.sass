@@ -113,6 +113,22 @@ ul, li
       transform: translateY(-50%)
       right: 17px
 
+.vertical-lines  
+  div
+    background-color: #fff
+    background-repeat: repeat-x
+    opacity: 0.07
+    width: 1px
+    height: 100%
+    position: absolute
+    top: 0
+    &:nth-child(1)
+      left: 10%
+    &:nth-child(2)
+      left: 40%
+    &:nth-child(3)
+      left: 70%
+  
 .footer__slider
   &-info
     left: 50%
@@ -122,6 +138,7 @@ ul, li
     display: flex
     justify-content: space-between
     width: 85%
+    z-index: 10
   &-info-text
     position: relative
     width: 250px
